@@ -20,6 +20,6 @@ resource "aws_security_group" "webserver" {
   }
 
   tags = {
-    Name = "allow_tls"
+    Name = "SG for ${var.env}"
   }
 }
